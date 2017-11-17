@@ -1,0 +1,70 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar title" >
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content " hidden="{{activeIndex != 0}}">
+                
+                  <view class="weui-flex" wx:for="{{[1,2,3,4,5]}}">
+                    <view class="weui-flex__item"><view class="placeholder bc_green" >block {{index}}</view></view>
+                    <view class="weui-flex__item"><view class="placeholder bc_green">block {{index}}</view></view>
+                  </view>
+                </view>
+
+                <view class="weui-tab__content data-list" hidden="{{activeIndex != 1}}" style='"margin:0px 82px"'>
+                  <block wx:for="{{items}}" class="data-list">
+                      <list-item listData="{{item}}" ></list-item>  
+                   </block>
+                
+                </view>
+
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+                  <view class="page__bd">
+                    <view class="weui-search-bar">
+                        <view class="weui-search-bar__form">
+                            <view class="weui-search-bar__box">
+                                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                                <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                                    <icon type="clear" size="14"></icon>
+                                </view>
+                            </view>
+                            <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                                <icon class="weui-icon-search" type="search" size="14"></icon>
+                                <view class="weui-search-bar__text">搜索</view>
+                            </label>
+                        </view>
+                        <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+                    </view>
+                    <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+                        <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                            <view class="weui-cell__bd">
+                                <view>文本</view>
+                            </view>
+                        </navigator>
+                    </view>
+                </view>
+                <view style='margin:20rpx'>
+                <navigator url="/pages/index/index">
+                  <button class="weui-btn" type="primary" >primary 按钮 Go to index</button>
+                </navigator>
+                   <button class="weui-btn" type="primary" loading="true">primary 按钮 Go to index</button>
+                  <button class="weui-btn" type="warn">primary 按钮</button>
+                  <button class="weui-btn" type="default">default 按钮</button>
+                  <button class="weui-btn mini-btn" type="primary" size="mini">按钮</button>
+                  <button class="weui-btn mini-btn" type="default" size="mini">按钮</button>
+                  <button class="weui-btn mini-btn" type="warn" size="mini">按钮</button>
+                </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,4 @@
+/* pages/home/home.wxss */
+.data-list {
+  padding: 0px 10px;
+}

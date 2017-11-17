@@ -1,0 +1,29 @@
+<!--pages/register/register.wxml-->
+<view class='page-container'>
+    <text>注册</text>
+    <view class='item-group'>
+        <text class='label'>姓名</text>
+        <input type='text'></input>
+    </view>
+    <view class='item-group'>
+        <text class='label'>Search</text>
+        <input type='text' confirm-type="search"></input>
+    </view>
+  <view class='item-group submit-btn'>
+       <button class="weui-btn" type="primary" >提交</button>
+    </view>
+
+  <view class='test-api'>
+      <button class="weui-btn mini-btn" type="primary" size="mini" bindtap='local'>按钮</button>
+
+      <button class="weui-btn mini-btn" type="default" size="mini"  bindtap="scan">Scan</button>
+      
+      <button class="weui-btn mini-btn" type="warn" size="mini" bindtap="getData">按钮</button>
+  </view>
+<view class='test-api'>
+  <text>{{longitude}}</text> ---
+  <text>{{latitude}}</text>
+</view>
+    <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14"  bindmarkertap="markertap"  bindregionchange="regionchange" show-location style="width: 100%; height: 300px;" markers="{{markers}}" polyline="{{polyline}}"></map>
+ 
+</view>

@@ -1,0 +1,12 @@
+<!--pages/component/list-item.wxml-->
+ <view class='"list-item"'>
+    <image class='"item-image"' mode="{{mode}}" src="{{src}}"></image>
+    <view class='"item-right"'>
+        <text class='item-title'>{{listData.name}}</text>
+        <text class='item-des'>{{listData.des}}</text>
+        <view class="item-bottom">
+            <text class='item-data'>2017-11-17</text>
+        </view>
+    </view>
+</view> 
+

@@ -1,0 +1,69 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+view {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.bc_green{
+  background: #094407;
+}
+.bc_blue{
+  background: #576b95;
+}
+.bc_read {
+  background: #e64340;
+}
+
+.placeholder {
+    margin: 5px;
+    padding: 0 10px;
+    background-color: #ebebeb;
+    height: 8em;
+    line-height: 8em;
+    text-align: center;
+    }
+.title {
+  position: fixed;
+  background: white;
+}
+.page-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:center;
+  padding: 0rpx 20rpx;
+}
+.item-group {
+  width: 100%;
+}
+.item-group .label {
+  font-size: 28rpx;
+}
+.item-group input{
+     box-sizing: border-box;
+     height: 68rpx;
+    margin-top: 10rpx;
+    display: block;
+    width: 100%;
+    font-size: 28rpx;
+    padding: 10rpx 24rpx;
+    line-height: 68rpx;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 2rpx solid #ccc;
+    border-radius: 8rpx;
+}
+.submit-btn {
+  margin-top: 40rpx;
+}

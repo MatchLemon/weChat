@@ -1,0 +1,9 @@
+/* pages/register/register.wxss */
+.test-api {
+  box-sizing: border-box;
+  margin-top: 150rpx;
+  width: 100%;
+  border: 2rpx solid #ccc;
+  display: flex;
+  padding: 40rpx 0px;
+}
