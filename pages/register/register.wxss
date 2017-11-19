@@ -6,4 +6,9 @@
   border: 2rpx solid #ccc;
   display: flex;
   padding: 40rpx 0px;
+  margin-bottom: 20rpx;
+}
+.test-api .weui-btn:first-child {
+  margin-top:15px;
+
 }

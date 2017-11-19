@@ -127,8 +127,26 @@ local:function(){
           dottedLine: true
         }]
       });
+      wx.openLocation({
+        latitude: 31.2111688,
+        longitude: 121.6195233,
+        scale: 28
+      })
     }
   })
+},
+selectLocal:function() {
+  wx.chooseLocation({
+    success:(res)=>{
+      wx.openLocation({
+        latitude: res.latitude,
+        longitude: res.longitude,
+        name:res.name,
+        scale: 28
+      })
+    }
+  });
 }
+
 
 })

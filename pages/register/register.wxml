@@ -19,6 +19,7 @@
       <button class="weui-btn mini-btn" type="default" size="mini"  bindtap="scan">Scan</button>
       
       <button class="weui-btn mini-btn" type="warn" size="mini" bindtap="getData">按钮</button>
+      <button class="weui-btn mini-btn" type="warn" size="mini" bindtap="selectLocal">SELECT</button>
   </view>
 <view class='test-api'>
   <text>{{longitude}}</text> ---
