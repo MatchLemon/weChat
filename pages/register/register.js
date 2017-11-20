@@ -9,6 +9,15 @@ Page({
     longitude: 121.6195233,
       markers: [{
         iconPath: "/resources/map-icon.png",
+        callout:{
+          content:'xxxxxx',
+          color:'#333',
+          fontSize:'18px',
+          display:'BYCLICK',
+          borderRadius:'4px',
+          padding:'5px',
+          bgColor: '#FFF'
+        },
         id: 0,
         latitude: 31.2111688,
         longitude: 121.6195233,
@@ -33,7 +42,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
   },
 
   /**

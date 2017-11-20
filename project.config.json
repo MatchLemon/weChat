@@ -8,9 +8,10 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.6.6",
+	"libVersion": "1.6.0",
 	"appid": "wx2b10dbd645e8e116",
 	"projectname": "demo-test",
+	"debug": true,
 	"condition": {
 		"search": {
 			"current": -1,

@@ -2,3 +2,9 @@
 .data-list {
   padding: 0px 10px;
 }
+.mini-btn-flex {
+  display: flex;
+  align-items: center; 
+  flex-direction: row;
+  justify-content: center;
+}

@@ -57,11 +57,19 @@
                   <button class="weui-btn" type="primary" >primary 按钮 Go to index</button>
                 </navigator>
                    <button class="weui-btn" type="primary" loading="true">primary 按钮 Go to index</button>
-                  <button class="weui-btn" type="warn">primary 按钮</button>
+                   <navigator url="/pages/register/register">
+                    <button class="weui-btn" type="warn">primary 注册</button>
+                  </navigator>
                   <button class="weui-btn" type="default">default 按钮</button>
-                  <button class="weui-btn mini-btn" type="primary" size="mini">按钮</button>
-                  <button class="weui-btn mini-btn" type="default" size="mini">按钮</button>
-                  <button class="weui-btn mini-btn" type="warn" size="mini">按钮</button>
+                  <view class="mini-btn-flex">
+                      <navigator url="/pages/map/map-context">
+                        <button class="weui-btn mini-btn" type="primary" size="mini" >按钮 map</button>
+                      </navigator>
+                      
+                      <button class="weui-btn mini-btn" type="default" size="mini">按钮</button>
+                      <button class="weui-btn mini-btn" type="warn" size="mini">按钮</button>
+                  </view>
+                 
                 </view>
                 </view>
             </view>
