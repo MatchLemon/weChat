@@ -62,7 +62,7 @@
                   </navigator>
                   <button class="weui-btn" type="default">default 按钮</button>
                   <view class="mini-btn-flex">
-                      <navigator url="/pages/map/map-context">
+                      <navigator url="/pages/map/map-context" style="display:flex;margin-left:auto;margin-right:auto;">
                         <button class="weui-btn mini-btn" type="primary" size="mini" >按钮 map</button>
                       </navigator>
                       

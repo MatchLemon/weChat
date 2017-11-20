@@ -4,7 +4,7 @@
 }
 .mini-btn-flex {
   display: flex;
-  align-items: center; 
+  align-items: flex-end; 
   flex-direction: row;
   justify-content: center;
 }
